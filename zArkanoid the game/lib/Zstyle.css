@@ -1,0 +1,83 @@
+body {
+    margin:  0 ;
+    padding: 0 ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    height: 90vh ;
+    background-color: lightgrey ; 
+}
+#canvas {
+    margin-top: 10vh ;
+    border: 10px solid grey ;
+    border-radius: 10px ;
+    border-bottom: 10px dashed grey ;
+}
+#pause {
+    position:absolute ;
+    margin-top:  -30% ;
+    margin-left: -50% ;
+    text-align: left ;
+    background-color: darkgray ;
+    padding: 10px ;
+}
+#speedXlog {
+    position: absolute ;
+    margin-top: -35% ;
+    margin-left: 55% ;
+    text-align: center ;
+    background-color: darkgray ;
+    padding: 10px ;
+    width: 100px ;
+}
+#speedYlog {
+    position: absolute ;
+    margin-top: -29% ;
+    margin-left: 55% ;
+    text-align: center ;
+    background-color: darkgray ;
+    padding: 10px ;
+    width: 100px;
+}
+button {
+    display: flex ;
+    position:absolute;
+    padding:2% ;
+    font-size: 24px ;
+}
+    #b1 {
+        margin-left: 13%;
+        margin-top: -10%;
+    }
+    #b2 {
+        margin-left: 18%;
+        margin-top: -10%;
+    }
+    #b3 {
+        margin-left: 23%;
+        margin-top: -10%;
+    }
+        #b4 {
+            margin-left: 13%;
+            margin-top: -4%;
+        }
+        #b5 {
+            margin-left: 18%;
+            margin-top: -4%;
+        }
+        #b6 {
+            margin-left: 23%;
+            margin-top: -4%;
+        }
+            #b7 {
+                margin-left: 13%;
+                margin-top:  2%;
+            }            
+            #b8 {
+                margin-left: 18%;
+                margin-top:  2%;
+            }
+            #b9 {
+                margin-left: 23%;
+                margin-top:  2%;
+            }
