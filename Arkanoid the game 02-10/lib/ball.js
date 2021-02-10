@@ -37,3 +37,11 @@ function ball() {
 
 
 
+// POMYSL NA KOLIZJE PILKI: 
+
+// MIERZENIE W KTORA STRONE OD CENTRUM PILKI ZNAJDUJE SIE BLOCZEK
+// if (pilka jest w polu bloczku) {
+//    if (centrum pilkiY > Centrum bloczkuY)
+//      **CZTERY KOLEJNE STRONY**
+//
+// }
