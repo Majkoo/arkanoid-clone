@@ -38,7 +38,7 @@ btn2.addEventListener("click", function() {
     blocks = lvl2;
     console.log("2");
     btnclick();
-    speedmod = 0.07 ;
+    speedmod = 0.1 ;
     btn2.innerText = "X" ;
 });
 
@@ -82,12 +82,13 @@ btn8.addEventListener("click", function() {
     console.log("8");
     btnclick();
     btn8.innerText = "X" ;
+    speedmod = 0.9 ;
 });
 
 btn9.addEventListener("click", function() {
     blocks = lvl9;
     console.log("9");
     btnclick();
-    speedmod = 0.05 ;
+    speedmod = 0.06 ;
     btn9.innerText = "X" ;
 });

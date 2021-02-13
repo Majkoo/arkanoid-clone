@@ -95,33 +95,36 @@ function blockCol() {
     //  BlockX        BlockY         BlockWidth     BlockHeight
     //  blocks[i][0]  blocks[i][1]   blocks[i][2]   blocks[i][3]
 
-        // bot collision (block)
+        // collision (block)
     if (ballY <= blocks[i][1] + ballSize        &&
-        ballY >= blocks[i][1] - blocks[i][3]/2  &&
-        ballX >= blocks[i][0] - ballSize/2      &&
-        ballX <= blocks[i][0] + blocks[i][2]) { bColbot(); }
+        ballY >= blocks[i][1] - blocks[i][3]    &&
+        ballX >= blocks[i][0] - ballSize        &&
+        ballX <= blocks[i][0] + blocks[i][2]) {
 
-        // top collision (block)
+            // top
+        if (ballY >= blocks[i][1] - blocks[i][3]                &&
+            ballY <= blocks[i][1] - blocks[i][3] + ballSize/2   &&
+            ballX >= blocks[i][0] - ballSize                    &&
+            ballX <= blocks[i][0] + blocks[i][2]) { bColtop(); }
 
-    if (ballY >= blocks[i][1] - blocks[i][3]                &&
-        ballY <= blocks[i][1] - blocks[i][3] + ballSize/2   &&
-        ballX >= blocks[i][0] - ballSize                    &&
-        ballX <= blocks[i][0] + blocks[i][2]) { bColtop(); }
+            // bot
+        if (ballY <= blocks[i][1] + ballSize        &&
+            ballY >= blocks[i][1] - blocks[i][3]/2  &&
+            ballX >= blocks[i][0] - ballSize/2      &&
+            ballX <= blocks[i][0] + blocks[i][2]) { bColbot(); }
 
-        // left collision (block)
+            // right
+        if (ballX <= blocks[i][0] + blocks[i][2]            && 
+            ballX >= blocks[i][0] + blocks[i][2] - ballSize &&
+            ballY >= blocks[i][1] - ballSize                &&
+            ballY <= blocks[i][1] + blocks[i][3]) { bColright(); }
 
-    if (ballX >= blocks[i][0] - ballSize    && 
-        ballX <= blocks[i][0] + ballSize    && 
-        ballY >= blocks[i][1] - ballSize    && 
-        ballY <= blocks[i][1] + blocks[i][3]) { bColleft(); }
-
-        // right collision (block) (bugged [?] )
-
-    if (ballX <= blocks[i][0] + blocks[i][2] && 
-        ballX >= blocks[i][0] + blocks[i][2] - ballSize &&
-        ballY >= blocks[i][1] - ballSize &&
-        ballY <= blocks[i][1] + blocks[i][3]) { bColright(); }
-        
+            // left
+        if (ballX >= blocks[i][0] - ballSize    && 
+            ballX <= blocks[i][0] + ballSize    && 
+            ballY >= blocks[i][1] - ballSize    && 
+            ballY <= blocks[i][1] + blocks[i][3]) { bColleft(); }
+    } 
 }
 
     function bColbot () {
