@@ -82,7 +82,7 @@ btn8.addEventListener("click", function() {
     console.log("8");
     btnclick();
     btn8.innerText = "X" ;
-    speedmod = 0.9 ;
+    speedmod = 0.09 ;
 });
 
 btn9.addEventListener("click", function() {
